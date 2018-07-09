@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="click"
+            type="com.storm.demo.TestDialog.OnClick"/>
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:focusableInTouchMode="true"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="@{click.onFinish}"
+            android:text="测试弹框" />
+    </LinearLayout>
+</layout>
